@@ -15,6 +15,8 @@
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060412695177B00E3BB5F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060402695177B00E3BB5F /* Location.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
+		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
+		C6F06048269520EF00E3BB5F /* AddLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F06047269520EF00E3BB5F /* AddLocationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060402695177B00E3BB5F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
+		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		C6F06047269520EF00E3BB5F /* AddLocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */,
+				C6F060452695200400E3BB5F /* AddLocationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C6F060432695181500E3BB5F /* SearchViewDelegate.swift */,
+				C6F06047269520EF00E3BB5F /* AddLocationDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -191,7 +197,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F06048269520EF00E3BB5F /* AddLocationDelegate.swift in Sources */,
 				C6085ABA269432B300F5A3F0 /* AppDelegate.swift in Sources */,
+				C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */,
 				C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */,
 				C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */,
 				C6085ABC269432B300F5A3F0 /* SceneDelegate.swift in Sources */,
