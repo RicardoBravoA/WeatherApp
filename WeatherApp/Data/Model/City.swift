@@ -12,9 +12,5 @@ struct City: Codable {
     let name: String
     let coord: Coord
     let country: String
-}
-
-struct Coord: Codable {
-    let lat: Double
-    let lon: Double
+    let timezone: Int
 }
