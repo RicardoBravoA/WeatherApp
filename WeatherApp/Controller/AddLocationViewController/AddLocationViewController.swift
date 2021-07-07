@@ -31,6 +31,9 @@ class AddLocationViewController: UIViewController {
         self.performSegue(withIdentifier: "SearchSegue", sender: nil)
     }
     
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SearchSegue" {
             guard let searchViewController = segue.destination as? SearchViewController else {
