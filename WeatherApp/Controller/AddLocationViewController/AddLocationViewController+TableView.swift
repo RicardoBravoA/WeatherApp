@@ -12,6 +12,7 @@ extension AddLocationViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let location = fetchedResultsController.object(at: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "DetailSegue", sender: location)
     }
     

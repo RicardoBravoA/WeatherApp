@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var todayLabel: UILabel!
     @IBOutlet weak var infoCollectionView: UICollectionView!
     @IBOutlet weak var infoTableView: UITableView!
+    @IBOutlet weak var todayTextLabel: UILabel!
     
     static let identifier = "ItemViewController"
     var location : Location!
@@ -29,12 +30,10 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("z- Location \(location)")
-        setUpInfoTableView()
-        weather()
+        getData()
     }
     
-    private func weather() {
+    private func getData() {
         guard let location = location else {
             print("Not location")
             return
@@ -43,7 +42,7 @@ class DetailViewController: UIViewController {
         ApiClient.weather(latitude: location.latitude, longitude: location.longitude) { response, error in
             
             guard let weather = response, error == nil else {
-                print("Error \(error)")
+                print("Error \(error?.localizedDescription)")
                 return
             }
             self.parseData(data: weather)
@@ -57,16 +56,14 @@ class DetailViewController: UIViewController {
         dailyWeather = weatherUtil.getDailyWeather()
         detailWeather = weatherUtil.getDetailWeather()
         
-        print("z- CurrentWeather \(currentWeather)")
-        print("z- hourWeather \(hourWeather)")
-        print("z- dailyWeather \(dailyWeather)")
-        print("z- detailWeather \(detailWeather)")
+        todayTextLabel.text = "Today: "
+        cityLabel.text = location.name
+        weatherDescription.text = currentWeather?.condition
+        temperatureLabel.text = currentWeather?.temperatureText
+        todayLabel.text = currentWeather?.dateText
         
         infoTableView.reloadData()
-        
-    }
-    
-    private func setUpInfoTableView() {
+        infoCollectionView.reloadData()
         
     }
     

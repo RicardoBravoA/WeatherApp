@@ -50,6 +50,8 @@
 		C642057F26959E120088402E /* DetailViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642057E26959E120088402E /* DetailViewController+TableView.swift */; };
 		C642058126959E930088402E /* DailyTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642058026959E930088402E /* DailyTableViewSection.swift */; };
 		C642058326959EB60088402E /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642058226959EB60088402E /* DetailTableViewCell.swift */; };
+		C64205852695A64A0088402E /* DetailViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64205842695A64A0088402E /* DetailViewController+CollectionView.swift */; };
+		C64205872695A67C0088402E /* HourCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64205862695A67C0088402E /* HourCollectionViewCell.swift */; };
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
 		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
@@ -102,6 +104,8 @@
 		C642057E26959E120088402E /* DetailViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+TableView.swift"; sourceTree = "<group>"; };
 		C642058026959E930088402E /* DailyTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewSection.swift; sourceTree = "<group>"; };
 		C642058226959EB60088402E /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		C64205842695A64A0088402E /* DetailViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		C64205862695A67C0088402E /* HourCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCollectionViewCell.swift; sourceTree = "<group>"; };
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
 		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 				C642057B26959C610088402E /* DailyTableViewCell.swift */,
 				C642058026959E930088402E /* DailyTableViewSection.swift */,
 				C642058226959EB60088402E /* DetailTableViewCell.swift */,
+				C64205862695A67C0088402E /* HourCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			children = (
 				C642053226955C430088402E /* DetailViewController.swift */,
 				C642057E26959E120088402E /* DetailViewController+TableView.swift */,
+				C64205842695A64A0088402E /* DetailViewController+CollectionView.swift */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 				C6420551269584B90088402E /* Clouds.swift in Sources */,
 				C6F06048269520EF00E3BB5F /* AddLocationDelegate.swift in Sources */,
 				C642052D26953A720088402E /* AddLocationViewController+TableView.swift in Sources */,
+				C64205852695A64A0088402E /* DetailViewController+CollectionView.swift in Sources */,
 				C64205792695907F0088402E /* DailyWeatherUtil.swift in Sources */,
 				C6420549269583F90088402E /* Snow.swift in Sources */,
 				C642058326959EB60088402E /* DetailTableViewCell.swift in Sources */,
@@ -399,6 +406,7 @@
 				C642056426958CF10088402E /* CurrentWeather.swift in Sources */,
 				C642052B2695383C0088402E /* AddLocationViewController+CoreData.swift in Sources */,
 				C642056626958D100088402E /* Weather.swift in Sources */,
+				C64205872695A67C0088402E /* HourCollectionViewCell.swift in Sources */,
 				C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */,
 				C6420559269587F90088402E /* ApiClient.swift in Sources */,
 				C642057526958F930088402E /* DetailWeatherUtil.swift in Sources */,
