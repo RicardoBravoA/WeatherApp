@@ -21,14 +21,8 @@ class DailyTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         self.backgroundColor = .clear
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    func setWeatherData(from weatherItem: WeatherDelegate) {
+    func setData(from weatherItem: WeatherDelegate) {
         self.weatherIconImageView.image = weatherItem.icon
         self.dayOfWeekLabel.text = weatherItem.dateText
         self.maxMinTemperatureLabel.text = weatherItem.temperatureText

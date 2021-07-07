@@ -61,6 +61,9 @@ class DetailViewController: UIViewController {
         print("z- hourWeather \(hourWeather)")
         print("z- dailyWeather \(dailyWeather)")
         print("z- detailWeather \(detailWeather)")
+        
+        infoTableView.reloadData()
+        
     }
     
     private func setUpInfoTableView() {

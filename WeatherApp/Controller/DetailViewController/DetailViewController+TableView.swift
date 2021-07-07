@@ -32,17 +32,17 @@ extension DetailViewController: UITableViewDataSource {
         switch section {
         case .daily:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: DailyTableViewCell.identifier, for: indexPath) as? DailyTableViewCell,
-                let weatherItem = viewModel?.dailyWeatherItems.value?[indexPath.row] else {
+                let weatherItem = dailyWeather?[indexPath.row] else {
                 return DailyTableViewCell()
             }
-            cell.setWeatherData(from: weatherItem)
+            cell.setData(from: weatherItem)
             return cell
         case .detail:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: DetailTableViewCell.identifier, for: indexPath) as? DetailTableViewCell,
-                let weatherPair = viewModel?.detailWeather.value?.getDetailWeather(at: indexPath.row) else {
+                let weatherPair = detailWeather?.getDetailWeather(at: indexPath.row) else {
                 return DetailTableViewCell()
             }
-            cell.setWeatherData(using: weatherPair)
+            cell.setData(using: weatherPair)
             return cell
         }
     }

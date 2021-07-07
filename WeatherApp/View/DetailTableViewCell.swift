@@ -24,7 +24,7 @@ class DetailTableViewCell: UITableViewCell {
         self.rightTitleLable.adjustsFontSizeToFitWidth = true
     }
     
-    func setWeatherData(using weatherAtRow: DetailWeatherUtil.DetailWeatherAtRow) {
+    func setData(using weatherAtRow: DetailWeatherUtil.DetailWeatherAtRow) {
         let (left, right) = weatherAtRow
         self.leftTitleLabel.text = left.title
         self.leftValueLable.text = left.value
