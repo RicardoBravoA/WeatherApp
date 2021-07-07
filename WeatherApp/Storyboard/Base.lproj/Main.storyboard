@@ -33,11 +33,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Location" id="Uod-So-GxO">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="OZ7-qI-0oh">
-                            <connections>
-                                <action selector="cancel:" destination="zz5-3B-Byj" id="9Z9-gn-WBs"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus.circle" catalog="system" id="vwu-yY-3DO">
                             <connections>
                                 <action selector="addLocation:" destination="zz5-3B-Byj" id="noC-2l-GwF"/>
