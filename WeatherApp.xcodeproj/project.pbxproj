@@ -17,6 +17,11 @@
 		C642052B2695383C0088402E /* AddLocationViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642052A2695383C0088402E /* AddLocationViewController+CoreData.swift */; };
 		C642052D26953A720088402E /* AddLocationViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642052C26953A720088402E /* AddLocationViewController+TableView.swift */; };
 		C642052F2695404B0088402E /* Location+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642052E2695404B0088402E /* Location+Extension.swift */; };
+		C642053326955C430088402E /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053226955C430088402E /* ItemViewController.swift */; };
+		C642053726955E4F0088402E /* UILabel+Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053626955E4F0088402E /* UILabel+Translate.swift */; };
+		C642053926955E780088402E /* UIScrollView+Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053826955E780088402E /* UIScrollView+Translate.swift */; };
+		C642053B26955E9C0088402E /* UIView+Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053A26955E9C0088402E /* UIView+Translate.swift */; };
+		C642053D269566040088402E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053C269566040088402E /* PageViewController.swift */; };
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
 		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
@@ -36,6 +41,11 @@
 		C642052A2695383C0088402E /* AddLocationViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddLocationViewController+CoreData.swift"; sourceTree = "<group>"; };
 		C642052C26953A720088402E /* AddLocationViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddLocationViewController+TableView.swift"; sourceTree = "<group>"; };
 		C642052E2695404B0088402E /* Location+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Extension.swift"; sourceTree = "<group>"; };
+		C642053226955C430088402E /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		C642053626955E4F0088402E /* UILabel+Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Translate.swift"; sourceTree = "<group>"; };
+		C642053826955E780088402E /* UIScrollView+Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Translate.swift"; sourceTree = "<group>"; };
+		C642053A26955E9C0088402E /* UIView+Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Translate.swift"; sourceTree = "<group>"; };
+		C642053C269566040088402E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
 		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +82,8 @@
 		C6085AB8269432B300F5A3F0 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				C642053526955E2F0088402E /* View */,
+				C642053426955E230088402E /* New Group */,
 				C6F060422695180000E3BB5F /* Delegate */,
 				C6F0603D2695133000E3BB5F /* Data */,
 				C6F060382695058200E3BB5F /* Controller */,
@@ -102,6 +114,33 @@
 			path = "Managed Object Extension";
 			sourceTree = "<group>";
 		};
+		C642053126955C220088402E /* AddLocationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6F060452695200400E3BB5F /* AddLocationViewController.swift */,
+				C642052A2695383C0088402E /* AddLocationViewController+CoreData.swift */,
+				C642052C26953A720088402E /* AddLocationViewController+TableView.swift */,
+			);
+			path = AddLocationViewController;
+			sourceTree = "<group>";
+		};
+		C642053426955E230088402E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		C642053526955E2F0088402E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C642053626955E4F0088402E /* UILabel+Translate.swift */,
+				C642053826955E780088402E /* UIScrollView+Translate.swift */,
+				C642053A26955E9C0088402E /* UIView+Translate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C6F060372695057100E3BB5F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +153,10 @@
 		C6F060382695058200E3BB5F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C642053126955C220088402E /* AddLocationViewController */,
 				C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */,
-				C6F060452695200400E3BB5F /* AddLocationViewController.swift */,
-				C642052A2695383C0088402E /* AddLocationViewController+CoreData.swift */,
-				C642052C26953A720088402E /* AddLocationViewController+TableView.swift */,
+				C642053226955C430088402E /* ItemViewController.swift */,
+				C642053C269566040088402E /* PageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,15 +266,20 @@
 			files = (
 				C642052F2695404B0088402E /* Location+Extension.swift in Sources */,
 				C6F06048269520EF00E3BB5F /* AddLocationDelegate.swift in Sources */,
+				C642053B26955E9C0088402E /* UIView+Translate.swift in Sources */,
 				C642052D26953A720088402E /* AddLocationViewController+TableView.swift in Sources */,
 				C6085ABA269432B300F5A3F0 /* AppDelegate.swift in Sources */,
 				C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */,
+				C642053726955E4F0088402E /* UILabel+Translate.swift in Sources */,
+				C642053326955C430088402E /* ItemViewController.swift in Sources */,
 				C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */,
 				C64205292695371E0088402E /* DataController.swift in Sources */,
 				C64205272695349B0088402E /* Weather.xcdatamodeld in Sources */,
+				C642053926955E780088402E /* UIScrollView+Translate.swift in Sources */,
 				C642052B2695383C0088402E /* AddLocationViewController+CoreData.swift in Sources */,
 				C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */,
 				C6085ABC269432B300F5A3F0 /* SceneDelegate.swift in Sources */,
+				C642053D269566040088402E /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
