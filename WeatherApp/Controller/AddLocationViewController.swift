@@ -13,12 +13,24 @@ class AddLocationViewController: UIViewController {
     weak var delegate: AddLocationDelegate?
     var locations = [Location]()
     
+    @IBAction func addLocation(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "SearchSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SearchSegue" {
+            guard let searchViewController = segue.destination as? SearchViewController else {
+                return
+            }
+            searchViewController.delegate = self
+        }
+    }
 }
 
 extension AddLocationViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.delegate?.userSelectLocation(at: indexPath.row)
-        self.dismiss(animated: true, completion: nil)
+        delegate?.userSelectLocation(at: indexPath.row)
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -33,6 +45,11 @@ extension AddLocationViewController: UITableViewDataSource {
         cell.textLabel?.text = location.name
         return cell
     }
-    
-    
+}
+
+extension AddLocationViewController: SearchViewDelegate {
+    func addLocation(location: Location) {
+        print("Location \(location)")
+        locations.append(location)
+    }
 }

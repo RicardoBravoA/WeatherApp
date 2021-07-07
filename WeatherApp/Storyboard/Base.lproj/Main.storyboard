@@ -34,10 +34,13 @@
                     <navigationItem key="navigationItem" title="Add Location" id="Uod-So-GxO">
                         <barButtonItem key="rightBarButtonItem" image="plus.circle" catalog="system" id="vwu-yY-3DO">
                             <connections>
-                                <segue destination="whb-Jj-7i9" kind="showDetail" id="3g6-mW-yGF"/>
+                                <action selector="addLocation:" destination="zz5-3B-Byj" id="noC-2l-GwF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="whb-Jj-7i9" kind="showDetail" identifier="SearchSegue" id="bKH-s1-56x"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxd-Zk-6FB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

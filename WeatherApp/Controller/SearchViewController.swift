@@ -16,14 +16,14 @@ class SearchViewController: UIViewController {
     private var searchCompleter = MKLocalSearchCompleter()
     private var searchResults = [MKLocalSearchCompletion]()
     
-    private weak var delegate: SearchViewDelegate?
+    weak var delegate: SearchViewDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.searchBar.showsCancelButton = true
-        self.searchBar.becomeFirstResponder()
-        self.searchCompleter.delegate = self
+        searchBar.showsCancelButton = true
+        searchBar.becomeFirstResponder()
+        searchCompleter.delegate = self
     }
     
 }
@@ -38,7 +38,7 @@ extension SearchViewController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -73,7 +73,6 @@ extension SearchViewController: UITableViewDelegate {
         let search = MKLocalSearch(request: searchRequest)
         search.start { (response, error) in
             guard error == nil else {
-                print(error?.localizedDescription)
                 return
             }
             guard let placeMark = response?.mapItems[0].placemark else {
@@ -81,7 +80,6 @@ extension SearchViewController: UITableViewDelegate {
             }
             let locationName = "\(placeMark.locality ?? selectedResult.title)"
             self.delegate?.addLocation(location: Location(name: locationName, latitude: placeMark.coordinate.latitude, longitude: placeMark.coordinate.longitude))
-            print("Location: \(locationName)")
             self.dismiss(animated: true, completion: nil)
         }
     }
