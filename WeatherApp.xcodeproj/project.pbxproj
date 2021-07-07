@@ -17,8 +17,7 @@
 		C642052B2695383C0088402E /* AddLocationViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642052A2695383C0088402E /* AddLocationViewController+CoreData.swift */; };
 		C642052D26953A720088402E /* AddLocationViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642052C26953A720088402E /* AddLocationViewController+TableView.swift */; };
 		C642052F2695404B0088402E /* Location+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642052E2695404B0088402E /* Location+Extension.swift */; };
-		C642053326955C430088402E /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053226955C430088402E /* ItemViewController.swift */; };
-		C642053D269566040088402E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053C269566040088402E /* PageViewController.swift */; };
+		C642053326955C430088402E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053226955C430088402E /* DetailViewController.swift */; };
 		C6420541269582790088402E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420540269582790088402E /* City.swift */; };
 		C6420543269583100088402E /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420542269583100088402E /* Coord.swift */; };
 		C6420545269583590088402E /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420544269583590088402E /* MainModel.swift */; };
@@ -45,8 +44,14 @@
 		C642057126958F110088402E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642057026958F110088402E /* Date.swift */; };
 		C642057326958F2A0088402E /* UnitSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642057226958F2A0088402E /* UnitSymbol.swift */; };
 		C642057526958F930088402E /* DetailWeatherUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642057426958F930088402E /* DetailWeatherUtil.swift */; };
-		C642057726958FDE0088402E /* HourWeatherItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642057626958FDE0088402E /* HourWeatherItem.swift */; };
+		C642057726958FDE0088402E /* HourWeatherUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642057626958FDE0088402E /* HourWeatherUtil.swift */; };
 		C64205792695907F0088402E /* DailyWeatherUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64205782695907F0088402E /* DailyWeatherUtil.swift */; };
+		C642057C26959C610088402E /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642057B26959C610088402E /* DailyTableViewCell.swift */; };
+		C642057F26959E120088402E /* DetailViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642057E26959E120088402E /* DetailViewController+TableView.swift */; };
+		C642058126959E930088402E /* DailyTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642058026959E930088402E /* DailyTableViewSection.swift */; };
+		C642058326959EB60088402E /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642058226959EB60088402E /* DetailTableViewCell.swift */; };
+		C64205852695A64A0088402E /* DetailViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64205842695A64A0088402E /* DetailViewController+CollectionView.swift */; };
+		C64205872695A67C0088402E /* HourCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64205862695A67C0088402E /* HourCollectionViewCell.swift */; };
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
 		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
@@ -66,8 +71,7 @@
 		C642052A2695383C0088402E /* AddLocationViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddLocationViewController+CoreData.swift"; sourceTree = "<group>"; };
 		C642052C26953A720088402E /* AddLocationViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddLocationViewController+TableView.swift"; sourceTree = "<group>"; };
 		C642052E2695404B0088402E /* Location+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Extension.swift"; sourceTree = "<group>"; };
-		C642053226955C430088402E /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
-		C642053C269566040088402E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		C642053226955C430088402E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C6420540269582790088402E /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		C6420542269583100088402E /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
 		C6420544269583590088402E /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -94,8 +98,14 @@
 		C642057026958F110088402E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		C642057226958F2A0088402E /* UnitSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSymbol.swift; sourceTree = "<group>"; };
 		C642057426958F930088402E /* DetailWeatherUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherUtil.swift; sourceTree = "<group>"; };
-		C642057626958FDE0088402E /* HourWeatherItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourWeatherItem.swift; sourceTree = "<group>"; };
+		C642057626958FDE0088402E /* HourWeatherUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourWeatherUtil.swift; sourceTree = "<group>"; };
 		C64205782695907F0088402E /* DailyWeatherUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherUtil.swift; sourceTree = "<group>"; };
+		C642057B26959C610088402E /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
+		C642057E26959E120088402E /* DetailViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+TableView.swift"; sourceTree = "<group>"; };
+		C642058026959E930088402E /* DailyTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewSection.swift; sourceTree = "<group>"; };
+		C642058226959EB60088402E /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		C64205842695A64A0088402E /* DetailViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		C64205862695A67C0088402E /* HourCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCollectionViewCell.swift; sourceTree = "<group>"; };
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
 		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
@@ -132,12 +142,13 @@
 		C6085AB8269432B300F5A3F0 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				C642056D26958EE10088402E /* Extensions */,
-				C642055C26958C540088402E /* Util */,
+				C642057A26959C530088402E /* View */,
 				C6F060422695180000E3BB5F /* Delegate */,
 				C6F0603D2695133000E3BB5F /* Data */,
 				C6F060382695058200E3BB5F /* Controller */,
 				C6F060372695057100E3BB5F /* Storyboard */,
+				C642055C26958C540088402E /* Util */,
+				C642056D26958EE10088402E /* Extensions */,
 				C6085AB9269432B300F5A3F0 /* AppDelegate.swift */,
 				C6085ABB269432B300F5A3F0 /* SceneDelegate.swift */,
 				C6085AC2269432B700F5A3F0 /* Assets.xcassets */,
@@ -181,7 +192,7 @@
 				C64205782695907F0088402E /* DailyWeatherUtil.swift */,
 				C642055F26958C900088402E /* DateUtil.swift */,
 				C642057426958F930088402E /* DetailWeatherUtil.swift */,
-				C642057626958FDE0088402E /* HourWeatherItem.swift */,
+				C642057626958FDE0088402E /* HourWeatherUtil.swift */,
 				C642056726958D240088402E /* TemperatureUtil.swift */,
 				C642056926958D430088402E /* TemperatureUnit.swift */,
 				C642057226958F2A0088402E /* UnitSymbol.swift */,
@@ -202,6 +213,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C642057A26959C530088402E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C642057B26959C610088402E /* DailyTableViewCell.swift */,
+				C642058026959E930088402E /* DailyTableViewSection.swift */,
+				C642058226959EB60088402E /* DetailTableViewCell.swift */,
+				C64205862695A67C0088402E /* HourCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C642057D26959DFD0088402E /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C642053226955C430088402E /* DetailViewController.swift */,
+				C642057E26959E120088402E /* DetailViewController+TableView.swift */,
+				C64205842695A64A0088402E /* DetailViewController+CollectionView.swift */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
 		C6F060372695057100E3BB5F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,10 +246,9 @@
 		C6F060382695058200E3BB5F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C642057D26959DFD0088402E /* DetailViewController */,
 				C642053126955C220088402E /* AddLocationViewController */,
 				C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */,
-				C642053226955C430088402E /* ItemViewController.swift */,
-				C642053C269566040088402E /* PageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,29 +371,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6420545269583590088402E /* MainModel.swift in Sources */,
+				C642057C26959C610088402E /* DailyTableViewCell.swift in Sources */,
 				C642056026958C900088402E /* DateUtil.swift in Sources */,
 				C642054B269584230088402E /* Wind.swift in Sources */,
 				C642052F2695404B0088402E /* Location+Extension.swift in Sources */,
 				C6420551269584B90088402E /* Clouds.swift in Sources */,
 				C6F06048269520EF00E3BB5F /* AddLocationDelegate.swift in Sources */,
 				C642052D26953A720088402E /* AddLocationViewController+TableView.swift in Sources */,
+				C64205852695A64A0088402E /* DetailViewController+CollectionView.swift in Sources */,
 				C64205792695907F0088402E /* DailyWeatherUtil.swift in Sources */,
 				C6420549269583F90088402E /* Snow.swift in Sources */,
+				C642058326959EB60088402E /* DetailTableViewCell.swift in Sources */,
 				C6085ABA269432B300F5A3F0 /* AppDelegate.swift in Sources */,
 				C642057326958F2A0088402E /* UnitSymbol.swift in Sources */,
 				C6420547269583E00088402E /* Rain.swift in Sources */,
 				C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */,
 				C642056226958CCB0088402E /* WeatherDelegate.swift in Sources */,
-				C642053326955C430088402E /* ItemViewController.swift in Sources */,
+				C642053326955C430088402E /* DetailViewController.swift in Sources */,
 				C6420543269583100088402E /* Coord.swift in Sources */,
 				C6420557269586670088402E /* EndPoint.swift in Sources */,
 				C6420541269582790088402E /* City.swift in Sources */,
+				C642058126959E930088402E /* DailyTableViewSection.swift in Sources */,
 				C6420553269584D90088402E /* ListModel.swift in Sources */,
 				C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */,
 				C642054F2695848A0088402E /* WeatherModel.swift in Sources */,
 				C642056C26958D8A0088402E /* WeatherIconUtil.swift in Sources */,
-				C642057726958FDE0088402E /* HourWeatherItem.swift in Sources */,
+				C642057726958FDE0088402E /* HourWeatherUtil.swift in Sources */,
 				C642056826958D240088402E /* TemperatureUtil.swift in Sources */,
+				C642057F26959E120088402E /* DetailViewController+TableView.swift in Sources */,
 				C64205292695371E0088402E /* DataController.swift in Sources */,
 				C642056F26958EEB0088402E /* StringInterpolation.swift in Sources */,
 				C642055E26958C5D0088402E /* WeatherUtil.swift in Sources */,
@@ -370,6 +406,7 @@
 				C642056426958CF10088402E /* CurrentWeather.swift in Sources */,
 				C642052B2695383C0088402E /* AddLocationViewController+CoreData.swift in Sources */,
 				C642056626958D100088402E /* Weather.swift in Sources */,
+				C64205872695A67C0088402E /* HourCollectionViewCell.swift in Sources */,
 				C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */,
 				C6420559269587F90088402E /* ApiClient.swift in Sources */,
 				C642057526958F930088402E /* DetailWeatherUtil.swift in Sources */,
@@ -379,7 +416,6 @@
 				C642056A26958D430088402E /* TemperatureUnit.swift in Sources */,
 				C642055B269588490088402E /* ErrorResponse.swift in Sources */,
 				C6420555269585440088402E /* WeatherResponse.swift in Sources */,
-				C642053D269566040088402E /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

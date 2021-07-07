@@ -1,5 +1,5 @@
 //
-//  HourWeatherItem.swift
+//  HourWeatherUtil.swift
 //  WeatherApp
 //
 //  Created by Ricardo Bravo on 7/07/21.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class HourWeatherItem: Weather, WeatherDelegate {
+class HourWeatherUtil: Weather, WeatherDelegate {
     
     var icon: UIImage {
         return WeatherIconUtil.getImage(named: iconName)
