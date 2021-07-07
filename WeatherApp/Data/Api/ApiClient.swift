@@ -9,6 +9,16 @@ import Foundation
 
 class ApiClient {
     
+    class func weather(latitude: Double, longitude: Double, completion: @escaping (WeatherResponse?, Error?) -> Void) {
+        taskForGETRequest(url: EndPoint.weather(latitude, longitude).url, response: WeatherResponse.self) { response, error in
+            if let response = response {
+                completion(response , nil)
+            } else {
+                completion(nil, error)
+            }
+        }
+    }
+    
     class func taskForGETRequest<ResponseType: Decodable>(url: URL, response: ResponseType.Type, completion: @escaping (ResponseType?, Error?) -> Void) {
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
