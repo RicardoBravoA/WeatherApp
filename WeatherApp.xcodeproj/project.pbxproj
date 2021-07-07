@@ -12,6 +12,7 @@
 		C6085AC1269432B300F5A3F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6085ABF269432B300F5A3F0 /* Main.storyboard */; };
 		C6085AC3269432B700F5A3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6085AC2269432B700F5A3F0 /* Assets.xcassets */; };
 		C6085AC6269432B700F5A3F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6085AC4269432B700F5A3F0 /* LaunchScreen.storyboard */; };
+		C64205272695349B0088402E /* Weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C64205252695349B0088402E /* Weather.xcdatamodeld */; };
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060412695177B00E3BB5F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060402695177B00E3BB5F /* Location.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
@@ -27,6 +28,7 @@
 		C6085AC2269432B700F5A3F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6085AC5269432B700F5A3F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6085AC7269432B700F5A3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64205262695349B0088402E /* Weather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weather.xcdatamodel; sourceTree = "<group>"; };
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060402695177B00E3BB5F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			path = WeatherApp;
 			sourceTree = "<group>";
 		};
+		C6420524269534730088402E /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C64205252695349B0088402E /* Weather.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		C6F060372695057100E3BB5F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		C6F0603D2695133000E3BB5F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C6420524269534730088402E /* Storage */,
 				C6F0603F2695135500E3BB5F /* Api */,
 				C6F0603E2695134900E3BB5F /* Model */,
 			);
@@ -201,6 +212,7 @@
 				C6085ABA269432B300F5A3F0 /* AppDelegate.swift in Sources */,
 				C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */,
 				C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */,
+				C64205272695349B0088402E /* Weather.xcdatamodeld in Sources */,
 				C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */,
 				C6085ABC269432B300F5A3F0 /* SceneDelegate.swift in Sources */,
 				C6F060412695177B00E3BB5F /* Location.swift in Sources */,
@@ -403,6 +415,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C64205252695349B0088402E /* Weather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C64205262695349B0088402E /* Weather.xcdatamodel */,
+			);
+			currentVersion = C64205262695349B0088402E /* Weather.xcdatamodel */;
+			path = Weather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C6085AAE269432B300F5A3F0 /* Project object */;
 }
