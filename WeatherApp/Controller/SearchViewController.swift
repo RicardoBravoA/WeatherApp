@@ -78,8 +78,7 @@ extension SearchViewController: UITableViewDelegate {
             guard let placeMark = response?.mapItems[0].placemark else {
                 return
             }
-            let locationName = "\(placeMark.locality ?? selectedResult.title)"
-            self.delegate?.addLocation(location: Location(name: locationName, latitude: placeMark.coordinate.latitude, longitude: placeMark.coordinate.longitude))
+            self.delegate?.addLocation(name: selectedResult.title, latitude: placeMark.coordinate.latitude, longitude: placeMark.coordinate.longitude)
             self.dismiss(animated: true, completion: nil)
         }
     }

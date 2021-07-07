@@ -43,6 +43,10 @@ class DataController {
         }
     }
     
+    func location() -> Location {
+        return Location(context: viewContext)
+    }
+    
 }
 
 extension DataController {
