@@ -30,6 +30,12 @@ class PageViewController: UIViewController {
         super.viewDidLoad()
         loadLocations()
         setupPageController()
+//        
+//        ApiClient.weather(latitude: Double("34.053345") ?? 0.0, longitude: Double("-118.242349") ?? 0.0) { response, error in
+//            print("Error \(error)")
+//            print("Response \(response)")
+//        }
+        
     }
     
     private func loadLocations() {

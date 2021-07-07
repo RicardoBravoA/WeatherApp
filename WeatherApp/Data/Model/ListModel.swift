@@ -10,7 +10,7 @@ import Foundation
 struct ListModel: Codable {
     let dt: Int
     let main: MainModel
-    let weather: [Weather]
+    let weather: [WeatherModel]
     let clouds: Clouds
     let wind: Wind
     let dtTxt: String

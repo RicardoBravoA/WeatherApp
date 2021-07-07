@@ -21,4 +21,28 @@ class ItemViewController: UIViewController {
     var location : Location!
     var index = 0
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    private func weather() {
+        guard let location = location else {
+            print("Not location")
+            return
+        }
+        
+        ApiClient.weather(latitude: location.latitude, longitude: location.longitude) { response, error in
+            
+            guard let weather = response, error == nil else {
+                print("Error \(error)")
+                return
+            }
+            self.parseData(data: weather)
+        }
+    }
+    
+    private func parseData(data: WeatherResponse) {
+        
+    }
+    
 }
