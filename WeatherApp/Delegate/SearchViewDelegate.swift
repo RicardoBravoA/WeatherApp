@@ -8,5 +8,7 @@
 import Foundation
 
 protocol SearchViewDelegate: AnyObject {
-    func addLocation(location: Location)
+    
+    func addLocation(name: String, latitude: Double, longitude: Double)
+    
 }

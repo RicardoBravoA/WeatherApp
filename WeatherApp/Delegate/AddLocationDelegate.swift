@@ -8,7 +8,10 @@
 import Foundation
 
 protocol AddLocationDelegate: AnyObject {
+    
     func userSelectLocation(at index: Int)
-    func addLocation(location: Location)
+    
+    func addLocation(name: String, latitude: Double, longitude: Double)
+    
     func userDeleteLocation(at index: Int)
 }
