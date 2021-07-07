@@ -47,6 +47,11 @@ extension SearchViewController: MKLocalSearchCompleterDelegate {
         searchResults = completer.results
         tableView.reloadData()
     }
+    
+    func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
+        showAlertController(message: error.localizedDescription)
+    }
+    
 }
 
 extension SearchViewController: UITableViewDataSource {
@@ -69,12 +74,8 @@ extension SearchViewController: UITableViewDelegate {
         let searchRequest = MKLocalSearch.Request(completion: selectedResult)
         let search = MKLocalSearch(request: searchRequest)
         search.start { (response, error) in
-            guard error == nil else {
-                return
-            }
-            guard let placeMark = response?.mapItems[0].placemark else {
-                return
-            }
+            guard error == nil else { return }
+            guard let placeMark = response?.mapItems[0].placemark else { return }
             self.delegate?.addLocation(name: selectedResult.title, latitude: placeMark.coordinate.latitude, longitude: placeMark.coordinate.longitude)
             self.dismiss(animated: true, completion: nil)
         }

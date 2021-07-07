@@ -56,6 +56,7 @@
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
 		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
 		C6F06048269520EF00E3BB5F /* AddLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F06047269520EF00E3BB5F /* AddLocationDelegate.swift */; };
+		C6F9D7D82695F12400302FF4 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F9D7D72695F12400302FF4 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
 		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		C6F06047269520EF00E3BB5F /* AddLocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationDelegate.swift; sourceTree = "<group>"; };
+		C6F9D7D72695F12400302FF4 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 				C642057D26959DFD0088402E /* DetailViewController */,
 				C642053126955C220088402E /* AddLocationViewController */,
 				C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */,
+				C6F9D7D72695F12400302FF4 /* UIViewController+Extensions.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				C642057126958F110088402E /* Date.swift in Sources */,
 				C6085ABC269432B300F5A3F0 /* SceneDelegate.swift in Sources */,
 				C642056A26958D430088402E /* TemperatureUnit.swift in Sources */,
+				C6F9D7D82695F12400302FF4 /* UIViewController+Extensions.swift in Sources */,
 				C642055B269588490088402E /* ErrorResponse.swift in Sources */,
 				C6420555269585440088402E /* WeatherResponse.swift in Sources */,
 			);

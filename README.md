@@ -7,6 +7,13 @@ Final Project of the [iOS Developer Nanodegree course](https://www.udacity.com/c
 Download the project from [Github](https://github.com/RicardoBravoA/WeatherApp), the updated branch is **main**
 
 
+## Basic Requirements
+
+- Xcode 12.5.1
+- iOS 14.5
+- For [API Key](https://openweathermap.org/) and replace in ./Data/Api/ -> EndPoint.swift -> appID
+
+
 ## Project Instructions
 
 The project has this features.
