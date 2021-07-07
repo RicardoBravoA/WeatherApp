@@ -12,9 +12,7 @@ import CoreData
 class AddLocationViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    weak var delegate: AddLocationDelegate?
     var fetchedResultsController: NSFetchedResultsController<Location>!
-    static let identifier = "AddLocationViewController"
     
     var dataController: DataController! {
         let object = UIApplication.shared.delegate
@@ -28,19 +26,27 @@ class AddLocationViewController: UIViewController {
     }
     
     @IBAction func addLocation(_ sender: UIBarButtonItem) {
-        self.performSegue(withIdentifier: "SearchSegue", sender: nil)
+        performSegue(withIdentifier: "SearchSegue", sender: nil)
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SearchSegue" {
             guard let searchViewController = segue.destination as? SearchViewController else {
                 return
             }
             searchViewController.delegate = self
+        } else if segue.identifier == "DetailSegue" {
+            guard let detailViewController = segue.destination as? DetailViewController else {
+                return
+            }
+            let location = sender as! Location
+            detailViewController.location = location
         }
+    
     }
     
     private func setUpFetchedResultsController() {

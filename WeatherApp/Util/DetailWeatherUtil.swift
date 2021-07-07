@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DetailWeather {
+class DetailWeatherUtil {
     typealias DetailWeatherAtRow = (TitleValuePair, TitleValuePair)
     typealias TitleValuePair = (title: String, value: String)
     

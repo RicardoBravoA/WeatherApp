@@ -1,5 +1,5 @@
 //
-//  ItemViewController.swift
+//  DetailViewController.swift
 //  WeatherApp
 //
 //  Created by Ricardo Bravo on 6/07/21.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ItemViewController: UIViewController {
+class DetailViewController: UIViewController {
     
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherDescription: UILabel!
@@ -21,8 +21,17 @@ class ItemViewController: UIViewController {
     var location : Location!
     var index = 0
     
+    var currentWeather: CurrentWeather?
+    var dailyWeather: [DailyWeatherUtil]?
+    var hourWeather: [HourWeatherUtil]?
+    var detailWeather: DetailWeatherUtil?
+    var temperature: TemperatureUnit.Unit?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("z- Location \(location)")
+        weather()
     }
     
     private func weather() {
@@ -42,7 +51,16 @@ class ItemViewController: UIViewController {
     }
     
     private func parseData(data: WeatherResponse) {
+        let weatherUtil = WeatherUtil(data: data)
+        currentWeather = weatherUtil.getCurrentWeather()
+        hourWeather = weatherUtil.getHourWeather()
+        dailyWeather = weatherUtil.getDailyWeather()
+        detailWeather = weatherUtil.getDetailWeather()
         
+        print("z- CurrentWeather \(currentWeather)")
+        print("z- hourWeather \(hourWeather)")
+        print("z- dailyWeather \(dailyWeather)")
+        print("z- detailWeather \(detailWeather)")
     }
     
 }

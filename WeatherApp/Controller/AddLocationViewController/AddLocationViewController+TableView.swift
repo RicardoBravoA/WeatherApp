@@ -11,8 +11,8 @@ import UIKit
 extension AddLocationViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.userSelectLocation(at: indexPath.row)
-        dismiss(animated: true, completion: nil)
+        let location = fetchedResultsController.object(at: indexPath)
+        performSegue(withIdentifier: "DetailSegue", sender: location)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

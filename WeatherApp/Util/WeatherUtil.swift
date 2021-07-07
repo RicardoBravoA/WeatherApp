@@ -24,18 +24,18 @@ class WeatherUtil {
         return CurrentWeather(iconName: weather.icon, temperature: firstListItem.main.temp, condition: weather.description, date: convertedDate)
     }
     
-    func getHourlyWeatherItems() -> [HourWeatherItem] {
+    func getHourWeather() -> [HourWeatherUtil] {
         let maxCount = data.list.count > maxItemCount ? maxItemCount : data.list.count
         let weatherList = data.list[0...maxCount]
-        return weatherList.map { (list) -> HourWeatherItem in
+        return weatherList.map { (list) -> HourWeatherUtil in
             let temp = list.main.temp
             let iconName = list.weather[0].icon
             let convertedDate = utcTimeConverter.convertDateFromUTC(string: list.dtTxt)
-            return HourWeatherItem(iconName: iconName, temperature: temp, date: convertedDate)
+            return HourWeatherUtil(iconName: iconName, temperature: temp, date: convertedDate)
         }
     }
     
-    func getDailyWeatherItems() -> [DailyWeatherUtil] { // date, icon, temperature-min/max
+    func getDailyWeather() -> [DailyWeatherUtil] { // date, icon, temperature-min/max
         var minTemperature = [String: Double]()
         var maxTemperature = [String: Double]()
         var firstDate = [String: Date]()
@@ -57,8 +57,8 @@ class WeatherUtil {
         })
     }
     
-    func getDetailWeather() -> DetailWeather {
+    func getDetailWeather() -> DetailWeatherUtil {
         let firstItem = data.list[0].main
-        return DetailWeather(humidity: firstItem.humidity, regularPressure: firstItem.pressure, seaLevelPressure: firstItem.seaLevel, groundLevelPressure: firstItem.grndLevel, wind: data.list[0].wind, clouds: data.list[0].clouds)
+        return DetailWeatherUtil(humidity: firstItem.humidity, regularPressure: firstItem.pressure, seaLevelPressure: firstItem.seaLevel, groundLevelPressure: firstItem.grndLevel, wind: data.list[0].wind, clouds: data.list[0].clouds)
     }
 }
