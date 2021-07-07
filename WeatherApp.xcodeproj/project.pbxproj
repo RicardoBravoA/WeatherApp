@@ -26,10 +26,11 @@
 		C6420549269583F90088402E /* Snow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420548269583F90088402E /* Snow.swift */; };
 		C642054B269584230088402E /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642054A269584230088402E /* Wind.swift */; };
 		C642054D2695845E0088402E /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642054C2695845E0088402E /* WindDirection.swift */; };
-		C642054F2695848A0088402E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642054E2695848A0088402E /* Weather.swift */; };
+		C642054F2695848A0088402E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642054E2695848A0088402E /* WeatherModel.swift */; };
 		C6420551269584B90088402E /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420550269584B90088402E /* Clouds.swift */; };
 		C6420553269584D90088402E /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420552269584D90088402E /* ListModel.swift */; };
-		C6420555269585440088402E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420554269585440088402E /* WeatherModel.swift */; };
+		C6420555269585440088402E /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420554269585440088402E /* WeatherResponse.swift */; };
+		C6420557269586670088402E /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420556269586670088402E /* EndPoint.swift */; };
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
 		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
@@ -58,10 +59,11 @@
 		C6420548269583F90088402E /* Snow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snow.swift; sourceTree = "<group>"; };
 		C642054A269584230088402E /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		C642054C2695845E0088402E /* WindDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDirection.swift; sourceTree = "<group>"; };
-		C642054E2695848A0088402E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		C642054E2695848A0088402E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		C6420550269584B90088402E /* Clouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
 		C6420552269584D90088402E /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
-		C6420554269585440088402E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		C6420554269585440088402E /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		C6420556269586670088402E /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
 		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
@@ -178,10 +180,10 @@
 				C6420548269583F90088402E /* Snow.swift */,
 				C642054A269584230088402E /* Wind.swift */,
 				C642054C2695845E0088402E /* WindDirection.swift */,
-				C642054E2695848A0088402E /* Weather.swift */,
+				C642054E2695848A0088402E /* WeatherModel.swift */,
 				C6420550269584B90088402E /* Clouds.swift */,
 				C6420552269584D90088402E /* ListModel.swift */,
-				C6420554269585440088402E /* WeatherModel.swift */,
+				C6420554269585440088402E /* WeatherResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +191,7 @@
 		C6F0603F2695135500E3BB5F /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				C6420556269586670088402E /* EndPoint.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -284,17 +287,18 @@
 				C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */,
 				C642053326955C430088402E /* ItemViewController.swift in Sources */,
 				C6420543269583100088402E /* Coord.swift in Sources */,
+				C6420557269586670088402E /* EndPoint.swift in Sources */,
 				C6420541269582790088402E /* City.swift in Sources */,
 				C6420553269584D90088402E /* ListModel.swift in Sources */,
 				C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */,
-				C642054F2695848A0088402E /* Weather.swift in Sources */,
+				C642054F2695848A0088402E /* WeatherModel.swift in Sources */,
 				C64205292695371E0088402E /* DataController.swift in Sources */,
 				C64205272695349B0088402E /* Weather.xcdatamodeld in Sources */,
 				C642052B2695383C0088402E /* AddLocationViewController+CoreData.swift in Sources */,
 				C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */,
 				C642054D2695845E0088402E /* WindDirection.swift in Sources */,
 				C6085ABC269432B300F5A3F0 /* SceneDelegate.swift in Sources */,
-				C6420555269585440088402E /* WeatherModel.swift in Sources */,
+				C6420555269585440088402E /* WeatherResponse.swift in Sources */,
 				C642053D269566040088402E /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
