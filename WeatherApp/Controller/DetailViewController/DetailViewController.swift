@@ -19,7 +19,6 @@ class DetailViewController: UIViewController {
     
     static let identifier = "ItemViewController"
     var location : Location!
-    var index = 0
     
     var currentWeather: CurrentWeather?
     var dailyWeather: [DailyWeatherUtil]?
@@ -31,6 +30,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("z- Location \(location)")
+        setUpInfoTableView()
         weather()
     }
     
@@ -61,6 +61,10 @@ class DetailViewController: UIViewController {
         print("z- hourWeather \(hourWeather)")
         print("z- dailyWeather \(dailyWeather)")
         print("z- detailWeather \(detailWeather)")
+    }
+    
+    private func setUpInfoTableView() {
+        
     }
     
 }
