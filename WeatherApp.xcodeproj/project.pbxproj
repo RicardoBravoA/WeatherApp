@@ -19,6 +19,7 @@
 		C642052F2695404B0088402E /* Location+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642052E2695404B0088402E /* Location+Extension.swift */; };
 		C642053326955C430088402E /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053226955C430088402E /* ItemViewController.swift */; };
 		C642053D269566040088402E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642053C269566040088402E /* PageViewController.swift */; };
+		C6420541269582790088402E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420540269582790088402E /* City.swift */; };
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
 		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
@@ -40,6 +41,7 @@
 		C642052E2695404B0088402E /* Location+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Extension.swift"; sourceTree = "<group>"; };
 		C642053226955C430088402E /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		C642053C269566040088402E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		C6420540269582790088402E /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
 		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		C6F0603E2695134900E3BB5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C6420540269582790088402E /* City.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				C6085ABA269432B300F5A3F0 /* AppDelegate.swift in Sources */,
 				C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */,
 				C642053326955C430088402E /* ItemViewController.swift in Sources */,
+				C6420541269582790088402E /* City.swift in Sources */,
 				C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */,
 				C64205292695371E0088402E /* DataController.swift in Sources */,
 				C64205272695349B0088402E /* Weather.xcdatamodeld in Sources */,
