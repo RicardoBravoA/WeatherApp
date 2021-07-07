@@ -28,6 +28,7 @@
 		C642054D2695845E0088402E /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642054C2695845E0088402E /* WindDirection.swift */; };
 		C642054F2695848A0088402E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642054E2695848A0088402E /* Weather.swift */; };
 		C6420551269584B90088402E /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420550269584B90088402E /* Clouds.swift */; };
+		C6420553269584D90088402E /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420552269584D90088402E /* ListModel.swift */; };
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
 		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
@@ -58,6 +59,7 @@
 		C642054C2695845E0088402E /* WindDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDirection.swift; sourceTree = "<group>"; };
 		C642054E2695848A0088402E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		C6420550269584B90088402E /* Clouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
+		C6420552269584D90088402E /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
 		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				C642054C2695845E0088402E /* WindDirection.swift */,
 				C642054E2695848A0088402E /* Weather.swift */,
 				C6420550269584B90088402E /* Clouds.swift */,
+				C6420552269584D90088402E /* ListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				C642053326955C430088402E /* ItemViewController.swift in Sources */,
 				C6420543269583100088402E /* Coord.swift in Sources */,
 				C6420541269582790088402E /* City.swift in Sources */,
+				C6420553269584D90088402E /* ListModel.swift in Sources */,
 				C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */,
 				C642054F2695848A0088402E /* Weather.swift in Sources */,
 				C64205292695371E0088402E /* DataController.swift in Sources */,
