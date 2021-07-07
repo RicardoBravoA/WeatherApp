@@ -22,6 +22,7 @@
 		C6420541269582790088402E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420540269582790088402E /* City.swift */; };
 		C6420543269583100088402E /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420542269583100088402E /* Coord.swift */; };
 		C6420545269583590088402E /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420544269583590088402E /* MainModel.swift */; };
+		C6420547269583E00088402E /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420546269583E00088402E /* Rain.swift */; };
 		C6F0603C26950C9A00E3BB5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */; };
 		C6F060442695181500E3BB5F /* SearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060432695181500E3BB5F /* SearchViewDelegate.swift */; };
 		C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F060452695200400E3BB5F /* AddLocationViewController.swift */; };
@@ -46,6 +47,7 @@
 		C6420540269582790088402E /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		C6420542269583100088402E /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
 		C6420544269583590088402E /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		C6420546269583E00088402E /* Rain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
 		C6F0603B26950C9A00E3BB5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6F060432695181500E3BB5F /* SearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewDelegate.swift; sourceTree = "<group>"; };
 		C6F060452695200400E3BB5F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				C6420540269582790088402E /* City.swift */,
 				C6420542269583100088402E /* Coord.swift */,
 				C6420544269583590088402E /* MainModel.swift */,
+				C6420546269583E00088402E /* Rain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				C6F06048269520EF00E3BB5F /* AddLocationDelegate.swift in Sources */,
 				C642052D26953A720088402E /* AddLocationViewController+TableView.swift in Sources */,
 				C6085ABA269432B300F5A3F0 /* AppDelegate.swift in Sources */,
+				C6420547269583E00088402E /* Rain.swift in Sources */,
 				C6F060462695200400E3BB5F /* AddLocationViewController.swift in Sources */,
 				C642053326955C430088402E /* ItemViewController.swift in Sources */,
 				C6420543269583100088402E /* Coord.swift in Sources */,
