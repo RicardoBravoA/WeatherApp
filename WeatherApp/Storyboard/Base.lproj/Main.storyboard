@@ -39,6 +39,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="k6i-Ua-aRX" id="hXD-C3-W1E"/>
                         <segue destination="whb-Jj-7i9" kind="showDetail" identifier="SearchSegue" id="bKH-s1-56x"/>
                     </connections>
                 </tableViewController>

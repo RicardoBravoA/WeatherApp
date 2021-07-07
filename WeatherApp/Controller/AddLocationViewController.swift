@@ -10,6 +10,7 @@ import UIKit
 
 class AddLocationViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     weak var delegate: AddLocationDelegate?
     var locations = [Location]()
     
@@ -45,11 +46,19 @@ extension AddLocationViewController: UITableViewDataSource {
         cell.textLabel?.text = location.name
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            locations.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
 
 extension AddLocationViewController: SearchViewDelegate {
     func addLocation(location: Location) {
         print("Location \(location)")
         locations.append(location)
+        tableView.reloadData()
     }
 }
