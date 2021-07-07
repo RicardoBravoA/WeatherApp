@@ -14,6 +14,7 @@ class AddLocationViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     weak var delegate: AddLocationDelegate?
     var fetchedResultsController: NSFetchedResultsController<Location>!
+    static let identifier = "AddLocationViewController"
     
     var dataController: DataController! {
         let object = UIApplication.shared.delegate

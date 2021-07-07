@@ -11,7 +11,7 @@ protocol AddLocationDelegate: AnyObject {
     
     func userSelectLocation(at index: Int)
     
-    func addLocation(name: String, latitude: Double, longitude: Double)
+    func addLocation(location: Location)
     
     func userDeleteLocation(at index: Int)
 }
