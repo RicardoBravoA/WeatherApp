@@ -19,9 +19,9 @@ extension DetailViewController: UITableViewDataSource {
         }
         switch section {
         case .daily:
-            return viewModel?.dailyWeatherItems.value?.count ?? 0
+            return dailyWeather?.count ?? 0
         case .detail:
-            return viewModel?.detailWeather.value?.totalRow ?? 0
+            return detailWeather?.totalRow ?? 0
         }
     }
     

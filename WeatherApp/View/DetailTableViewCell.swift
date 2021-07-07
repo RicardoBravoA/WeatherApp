@@ -23,12 +23,6 @@ class DetailTableViewCell: UITableViewCell {
         self.leftTitleLabel.adjustsFontSizeToFitWidth = true
         self.rightTitleLable.adjustsFontSizeToFitWidth = true
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     func setWeatherData(using weatherAtRow: DetailWeatherUtil.DetailWeatherAtRow) {
         let (left, right) = weatherAtRow
