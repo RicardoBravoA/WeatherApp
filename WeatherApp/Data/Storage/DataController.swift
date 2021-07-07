@@ -47,6 +47,13 @@ class DataController {
         return Location(context: viewContext)
     }
     
+    func fetchLocations() throws -> [Location]? {
+        let fetchRequest: NSFetchRequest<Location> = Location.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "created", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        return try? viewContext.fetch(fetchRequest)
+    }
+    
 }
 
 extension DataController {

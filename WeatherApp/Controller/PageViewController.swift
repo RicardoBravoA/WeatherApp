@@ -20,9 +20,21 @@ class PageViewController: UIViewController {
     }
     var lastViewedPageIndex: Int = 0
     
+    var dataController: DataController! {
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        return appDelegate.dataController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadLocations()
         setupPageController()
+    }
+    
+    private func loadLocations() {
+        guard let data = try? dataController.fetchLocations() else { return }
+        userLocationList = data
     }
     
     private func setupPageController() {
