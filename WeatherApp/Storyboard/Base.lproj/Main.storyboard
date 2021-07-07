@@ -339,6 +339,9 @@
                                     <outlet property="delegate" destination="wlu-I7-cS6" id="Xtm-e6-nFW"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="5dC-BM-8dm">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ypD-YH-ViF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -349,9 +352,11 @@
                             <constraint firstItem="Rj4-OW-jRL" firstAttribute="top" secondItem="D8h-0m-PlR" secondAttribute="bottom" constant="16" id="XHg-27-aS0"/>
                             <constraint firstItem="A9F-ZY-qLZ" firstAttribute="top" secondItem="Rj4-OW-jRL" secondAttribute="bottom" constant="20" id="Y3P-xw-RBg"/>
                             <constraint firstItem="D8h-0m-PlR" firstAttribute="top" secondItem="fGF-nu-My4" secondAttribute="bottom" constant="8" id="YHI-7y-UGn"/>
+                            <constraint firstItem="5dC-BM-8dm" firstAttribute="centerY" secondItem="fQs-CR-xnq" secondAttribute="centerY" id="dTh-oS-2Gh"/>
                             <constraint firstItem="ypD-YH-ViF" firstAttribute="trailing" secondItem="D8h-0m-PlR" secondAttribute="trailing" constant="20" id="fKI-WE-pAt"/>
                             <constraint firstItem="ypD-YH-ViF" firstAttribute="trailing" secondItem="Rj4-OW-jRL" secondAttribute="trailing" constant="20" id="fwm-Pt-2Ht"/>
                             <constraint firstItem="Ppi-dr-4gc" firstAttribute="top" secondItem="A9F-ZY-qLZ" secondAttribute="bottom" constant="8" id="hbE-0I-lva"/>
+                            <constraint firstItem="5dC-BM-8dm" firstAttribute="centerX" secondItem="fQs-CR-xnq" secondAttribute="centerX" id="oMG-pY-cbf"/>
                             <constraint firstItem="fGF-nu-My4" firstAttribute="leading" secondItem="ypD-YH-ViF" secondAttribute="leading" constant="20" id="ovt-I9-084"/>
                             <constraint firstItem="Ppi-dr-4gc" firstAttribute="leading" secondItem="ypD-YH-ViF" secondAttribute="leading" id="q5X-OY-JVd"/>
                             <constraint firstItem="ypD-YH-ViF" firstAttribute="trailing" secondItem="fGF-nu-My4" secondAttribute="trailing" constant="20" id="roZ-TA-jK4"/>
@@ -361,6 +366,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="plR-IV-PJC"/>
                     <connections>
+                        <outlet property="activityMonitor" destination="5dC-BM-8dm" id="jT6-qA-iZ0"/>
                         <outlet property="cityLabel" destination="fGF-nu-My4" id="CRq-mj-PZr"/>
                         <outlet property="infoCollectionView" destination="Ppi-dr-4gc" id="0N8-zs-rdo"/>
                         <outlet property="infoTableView" destination="2x3-80-1tX" id="uxc-f2-1ZT"/>

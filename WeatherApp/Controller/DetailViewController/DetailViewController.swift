@@ -17,8 +17,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var infoCollectionView: UICollectionView!
     @IBOutlet weak var infoTableView: UITableView!
     @IBOutlet weak var todayTextLabel: UILabel!
-    
-    static let identifier = "ItemViewController"
+    @IBOutlet weak var activityMonitor: UIActivityIndicatorView!
     var location : Location!
     
     var currentWeather: CurrentWeather?
@@ -35,14 +34,16 @@ class DetailViewController: UIViewController {
     
     private func getData() {
         guard let location = location else {
-            print("Not location")
             return
         }
+        
+        activityMonitor.startAnimating()
         
         ApiClient.weather(latitude: location.latitude, longitude: location.longitude) { response, error in
             
             guard let weather = response, error == nil else {
-                print("Error \(error?.localizedDescription)")
+                self.activityMonitor.stopAnimating()
+                self.showAlertController(message: error?.localizedDescription ?? "")
                 return
             }
             self.parseData(data: weather)
@@ -50,21 +51,30 @@ class DetailViewController: UIViewController {
     }
     
     private func parseData(data: WeatherResponse) {
-        let weatherUtil = WeatherUtil(data: data)
-        currentWeather = weatherUtil.getCurrentWeather()
-        hourWeather = weatherUtil.getHourWeather()
-        dailyWeather = weatherUtil.getDailyWeather()
-        detailWeather = weatherUtil.getDetailWeather()
-        
-        todayTextLabel.text = "Today: "
-        cityLabel.text = location.name
-        weatherDescription.text = currentWeather?.condition
-        temperatureLabel.text = currentWeather?.temperatureText
-        todayLabel.text = currentWeather?.dateText
-        
-        infoTableView.reloadData()
-        infoCollectionView.reloadData()
-        
+        DispatchQueue.main.async {
+            let weatherUtil = WeatherUtil(data: data)
+            self.currentWeather = weatherUtil.getCurrentWeather()
+            self.hourWeather = weatherUtil.getHourWeather()
+            self.dailyWeather = weatherUtil.getDailyWeather()
+            self.detailWeather = weatherUtil.getDetailWeather()
+            
+            self.todayTextLabel.text = "Today: "
+            self.cityLabel.text = self.location.name
+            self.weatherDescription.text = self.currentWeather?.condition
+            self.temperatureLabel.text = self.currentWeather?.temperatureText
+            self.todayLabel.text = self.currentWeather?.dateText
+            
+            self.infoTableView.reloadData()
+            self.infoCollectionView.reloadData()
+            
+            self.activityMonitor.stopAnimating()
+        }
+    }
+    
+    func showAlertController(message: String) {
+        let alertController = UIAlertController(title: "WeatherApp", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
     
 }

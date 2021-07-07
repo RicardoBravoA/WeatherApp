@@ -47,9 +47,6 @@ extension SearchViewController: MKLocalSearchCompleterDelegate {
         searchResults = completer.results
         tableView.reloadData()
     }
-    func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
-        print(error.localizedDescription)
-    }
 }
 
 extension SearchViewController: UITableViewDataSource {
